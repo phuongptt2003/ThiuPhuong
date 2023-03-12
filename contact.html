@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div id="fb-root"></div>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="11jj8n0b"></script>
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            /* width: 200px; */
+            border-color: red;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        tr{
+            height: 60px;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial;
+        }
+        
+        header {
+          padding: 100px;
+          height: 30%;
+          color: rgb(67, 182, 32);
+          background-image: url("/TieuLuan/image/about/banner-about.jpg");
+        }
+        aside{
+            float: left;
+            width: 20%;
+            height: 1000px; 
+            background: #fbfaf9;
+            background-image: url("/TieuLuan/image/about/banner-about.jpg");
+            /* background-image: url("/TieuLuan/image/dia-danh/background-nham.jpg"); */
+            padding: 25px;
+        }
+        aside img{
+            border-radius: 40px;
+            width: 90%;
+        }
+        nav {
+            float: left;
+            width: 15%;
+            height: 1000px; 
+            background: #fbfaf9;
+            background-image: url("/TieuLuan/image/about/banner-about.jpg");
+            /* background-image: url("/TieuLuan/image/dia-danh/background-nham.jpg"); */
+            padding: 25px;
+            }
+            article {
+            float: left;
+            width: 65%;
+            /* background-color: #e7bba0; */
+            background-image: url("/TieuLuan/image/dia-danh/background-nham.jpg");
+            height: 1000px; 
+            padding: 20px;
+            }
+            article h1{
+                font-size: 35px;
+                color:rgb(255, 124, 43);
+                text-align: center;
+            }
+            article h2{
+                font-size: 28px;
+                color:#431ec9
+            }
+            article h4{
+                font-size: 23px;
+            }
+            article li, p{
+                font-size: 21px;
+            }
+            article img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 50px;
+            }
+             
+            footer {
+            background-color: #9ad4e4;
+            
+            padding: 100px;
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            color: white;
+            }
+
+             /* menu dọc */
+        .menu ol{
+            font-size: 20px;
+            text-decoration: none;/*  làm mất dấu gạch chân */
+        }
+        .menu li {
+            display: inline-block;
+            color:rgb(31, 12, 99);
+            text-align: center;
+            padding: 10px;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif; 
+        }
+        .menu li:hover{
+            background-color: rgb(22, 220, 151);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <nav>
+        <div class="menu">
+            <ol>
+                <table bgcolor="pink">
+                    <tr>
+                        <td>
+                            <a href="/TieuLuan/index.html" target="_blank" title="Chuyển tới trang ..."><li>Trang chủ</li></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a href="/TieuLuan/about.html"><li>Thông tin cá nhân</li></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="/TieuLuan/am-thuc/index.html"><li>Con người</li></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="/TieuLuan/dia-danh/index.html"><li>Phong cảnh</li></a></td>
+                    </tr>
+                    <tr>
+                       <td><a href="/TieuLuan/contact.html"><li>Contact</li></a></td> 
+                    </tr>
+                </table>
+            </ol>
+        </div>
+    </nav>
+    <article>
+        <h1>CONTACT US</h1>
+
+    <table border="0" align="center">
+        <form action="http://tranvanhung.fitstu.net/hufi/thiet-ke-web/form.php"
+        method="post"
+        enctype="multipart/form-data"
+        >
+
+            
+            <tr>
+                <td>
+                    <label for="name">Your name</label><br>
+                    <textarea name="name" id="name" cols="90" rows="2" placeholder="Enter Name" style="border-color: red"></textarea>
+                    <!-- <input type="text" name="name" id="name" placeholder="Enter Name" size="100px" style="border-color: red"/><br> -->
+                </td>
+            </tr>
+            </tr>
+                <td>
+                    <label for="email">Email</label><br>
+                    <textarea name="email" id="email" cols="90" rows="2" placeholder="Enter Email" style="border-color: red"></textarea>
+                    <!-- <input type="text" name="email" id="email" placeholder="Enter Email" size="100px" style="border-color: red" height="30%"/><br> -->
+                </td>
+            <form>
+            <tr>
+                <td>        
+                    <label for="phonenumber">Phone</label><br>
+                    <textarea name="sdt" id="phonenumber" cols="90" rows="2" placeholder="Enter Number" style="border-color: red"></textarea>
+                    <!-- <input type="text" name="phone" id="phonenumber" placeholder="Enter Number" size="100px" style="border-color: red"/><br> -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="sothich">Subject</label><br>
+                    <textarea name="sb" id="sothich" cols="90" rows="2" placeholder="Subject" style="border-color: red"></textarea>
+                    <!-- <input type="text" name="sb" id="sothich" placeholder="Subject" size="100px" style="border-color: red"/><br> -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tl">Message</label><br>
+                    <textarea name="" id="tl" cols="90" rows="20" style="border-color: red"></textarea><br>
+                    <!-- <input type="submit" size="20%" value="Submit"> -->
+                </td>
+            </tr>
+            <tr>
+                <td><h1><input type="submit" style="background-color: rgb(52, 170, 244)" value="Submit"></h1></td>
+            </tr>
+        </form>
+    </table>
+    </article>
+
+    <aside>
+        <table>
+            <tr>
+                <!-- <td><img src="/TieuLuan/image/dia-danh/rung-ngap-man-vam-sat.jpg"></td> -->
+            </tr>
+            <tr>
+                <td height="100"></td>
+            </tr>
+            <tr>
+                <!-- <td><img src="/TieuLuan/image/dia-danh/vam-sat-can-gio-3.jpg"></td> -->
+            </tr>
+            <tr>
+                <td height="100"></td>
+            </tr>
+            <tr>
+                <!-- <td><img src="/TieuLuan/image/dia-danh/cau-vam-sat.jfif"></td> -->
+            </tr>
+        </table>
+    </aside>
+    <footer>
+        <h3>2001216066</h3>
+        <h3>Phạm Thị Thu Phương</h3>
+        <h3>12DHTH15</h3>
+        <h3>Tiết 7-11 thứ 4</h3>
+    </footer>
+</body>
+</html>
