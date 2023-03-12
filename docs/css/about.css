@@ -219,3 +219,19 @@ article figure.test:hover figcaption {
   width: 100%;
   filter: drop-shadow(0 0 23px) var(--animation-color);
 }
+
+/* menu ngang */
+.menungang li {
+  float: center;
+}
+
+.menungang li {
+  display: inline-block;
+  color: rgb(118, 85, 234);
+  text-align: center;
+  padding: 16px 18px;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  /* làm mất dấu gạch chân */
+}
