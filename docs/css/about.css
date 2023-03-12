@@ -29,7 +29,7 @@ nav {
   float: left;
   width: 20%;
   height: 600px;
-  background-image: url("/image/about/banner2.jpg");
+  background-image: url("/ThiuPhuong/image/about/banner2.jpg");
   padding: 20px;
 }
 
@@ -37,7 +37,7 @@ article {
   float: left;
   padding: 20px;
   width: 80%;
-  background-image: url("/image/about/background-article.jpg");
+  background-image: url("/ThiuPhuong/image/about/background-article.jpg");
   height: 600px;
 }
 
