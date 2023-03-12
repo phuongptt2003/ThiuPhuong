@@ -1,86 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>1.nd</title>
     <style>
-        
         * {
-          box-sizing: border-box;
+            box-sizing: border-box;
         }
-        
+
         body {
-          font-family: 'Times New Roman', Times, serif;
+            font-family: 'Times New Roman', Times, serif;
         }
-        
+
         header {
-          padding: 10px;
+            padding: 10px;
         }
-        header h2{
+
+        header h2 {
             font-size: 50px;
             color: rgb(144, 61, 125);
         }
-        header h3{
+
+        header h3 {
             font-size: 30px;
         }
+
         article {
             float: left;
             padding: 130px;
             width: 80%;
             background-color: white;
-            height: 3900px; 
-            }
-        article p{
-            font-family:'Times New Roman', Times, serif;
+            height: 3900px;
+        }
+
+        article p {
+            font-family: 'Times New Roman', Times, serif;
             font-size: 25px;
         }
-        article h2{
-            font-family:'Times New Roman', Times, serif;
+
+        article h2 {
+            font-family: 'Times New Roman', Times, serif;
             font-size: 32px;
         }
-        article h3{
-            font-family:'Times New Roman', Times, serif;
+
+        article h3 {
+            font-family: 'Times New Roman', Times, serif;
             font-size: 28px;
-            color:#e17575
+            color: #e17575
         }
-       
-        article img{
+
+        article img {
             width: 40%;
             height: 300;
             display: block;
             border-radius: 50px;
             margin-left: auto;
-            margin-right:auto;
+            margin-right: auto;
         }
-        article i{
+
+        article i {
             float: center;
         }
-        article h1{
+
+        article h1 {
             text-align: center;
-            color:rgb(77, 43, 212);
+            color: rgb(77, 43, 212);
             font-size: 40px;
         }
+
         nav {
             float: left;
             width: 100%;
-            height: 500px; 
-            background-image :url("/image/dia-danh/rungcham.jpg");
+            height: 500px;
+            background-image: url("/image/dia-danh/rungcham.jpg");
             background-size: auto;
             padding: 20px;
-            }
-        aside{
+        }
+
+        aside {
             float: left;
             width: 10%;
-            height: 3900px; 
+            height: 3900px;
             background-image: url("/image/about/background-article.jpg");
             padding: 25px;
         }
-        #v1{
+
+        #v1 {
             text-align: center;
         }
+
         footer {
             background-color: #f1b6b6;
             padding: 80px;
@@ -88,34 +100,41 @@
             text-align: center;
             font-size: 10px;
             color: white;
-            }
-        footer h3{
+        }
+
+        footer h3 {
             font-size: 35px;
         }
-        header li{
+
+        header li {
             display: inline-block;
-            color:rgb(234, 53, 234);
+            color: rgb(234, 53, 234);
             text-align: center;
             padding: 14px 16px;
             text-decoration: none;
         }
-        header li:hover{
+
+        header li:hover {
             background-color: #e17575;
         }
+
         /* menu dọc */
-        .menu ol{
+        .menu ol {
             font-size: 30px;
-            text-decoration: none;/*  làm mất dấu gạch chân */
+            text-decoration: none;
+            /*  làm mất dấu gạch chân */
         }
+
         .menu li {
             display: inline-block;
-            color:rgb(31, 12, 99);
+            color: rgb(31, 12, 99);
             text-align: center;
             padding: 10px;
             font-size: 30px;
-            font-family: Arial, Helvetica, sans-serif; 
+            font-family: Arial, Helvetica, sans-serif;
         }
-        .menu li:hover{
+
+        .menu li:hover {
             background-color: rgb(240, 85, 232);
         }
 
@@ -123,20 +142,21 @@
         .banner {
             width: 100%;
             height: 440px;
-            margin-top:40px;
+            margin-top: 40px;
             display: flex;
-            padding:0px;
-            position:relative;
+            padding: 0px;
+            position: relative;
         }
 
-        .banner .box-left ,.banner .box-right {
+        .banner .box-left,
+        .banner .box-right {
             width: 50%;
         }
 
-        .banner  .box-left h2 {
-            font-size:48px;
-            margin-top:75px;
-            color:#884141;
+        .banner .box-left h2 {
+            font-size: 48px;
+            margin-top: 75px;
+            color: #884141;
         }
 
         /* .banner .box-left p {
@@ -157,76 +177,81 @@
         }
 
          */
-        .banner img{
+        .banner img {
             border-radius: 50px;
         }
+
         .banner .box-right {
-            padding-left:200px;
+            padding-left: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .banner .box-right img {
-            margin:6px;
-            animation :animation 3s infinite linear; 
+            margin: 6px;
+            animation: animation 3s infinite linear;
             height: 50%;
-            width:100;
-            
+            width: 100;
+
         }
 
 
-        .banner .box-right img:nth-child(1)
-        {
+        .banner .box-right img:nth-child(1) {
             animation-delay: 0.5s;
         }
-        .banner .box-right img:nth-child(2)
-        {
+
+        .banner .box-right img:nth-child(2) {
             animation-delay: 1s;
         }
+
         /* hiệu ứng */
         @keyframes animation {
-            0%{
-                transform:translateY(0px);
-            }
-            50%{
-                transform: translateY(-10px);
-            }
-            100%{
+            0% {
                 transform: translateY(0px);
             }
-            
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+
         }
 
         .to-bottom {
-            position:absolute;
-            bottom:-40px;
-            left:50%;
-            transform:translateX(-50%);
+            position: absolute;
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
         }
+
         /* Tìm kiếm */
-        .search{
+        .search {
             width: 20%;
             left: 80%;
             position: relative;
             display: flex;
         }
+
         .searchTerm {
             width: 100%;
             border: 3px solid #e16dec;
             border-right: none;
             padding: 10px;
             height: 46px;
-            border-radius: 5px 0 0 5px; 
+            border-radius: 5px 0 0 5px;
 
             color: #9DBFAF;
-            }
+        }
 
-            .searchTerm:focus{
+        .searchTerm:focus {
             color: #e04dbe;
-            }
+        }
 
-            .searchButton {
+        .searchButton {
             width: 100px;
             height: 46px;
             border: 1px solid #ec59d1;
@@ -236,18 +261,19 @@
             border-radius: 0 5px 5px 0;
             cursor: pointer;
             font-size: 20px;
-            }
-        .wrap{
+        }
+
+        .wrap {
             width: 20%;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            }
+        }
 
 
-      
-            /* menu dọc */
+
+        /* menu dọc */
         /* .menu ol{
             font-size: 30px;
             text-decoration: none;/*  làm mất dấu gạch chân */
@@ -262,17 +288,18 @@
         }
         .menu li:hover{
             background-color: rgb(240, 85, 232);
-        } */ 
+        } */
     </style>
 </head>
+
 <body>
     <header>
         <table border="0" width="100%">
-           
-                <!-- <td bgcolor="pink">
+
+            <!-- <td bgcolor="pink">
                     <ul>
-                        <h1 align="center" title="Vô đây nek"><a href="/am-thuc/index.html"><li>Ẩm thực</li></a>
-                            <a href="/dia-danh/index.html"><li>Phong cảnh</li></a></h1>
+                        <h1 align="center" title="Vô đây nek"><a href="/ThiuPhuong/am-thuc/index.html"><li>Ẩm thực</li></a>
+                            <a href="/ThiuPhuong/dia-danh/index.html"><li>Phong cảnh</li></a></h1>
                     </ul>
                 </td> -->
             <tr>
@@ -280,11 +307,21 @@
                     <div class="menungang">
                         <ol>
                             <h3>
-                                <a href="/index.html" target="_blank" title="Chuyển tới trang ..."><li>Trang chủ</li></a>
-                                <a href="/about.html"><li>Thông tin cá nhân</li></a>
-                                <a href="/am-thuc/index.html"><li>Con người</li></a>
-                                <a href="/dia-danh/index.html"><li>Phong cảnh</li></a>
-                                <a href="/contact.html"><li>Contact</li></a>
+                                <a href="/ThiuPhuong/index.html" target="_blank" title="Chuyển tới trang ...">
+                                    <li>Trang chủ</li>
+                                </a>
+                                <a href="/ThiuPhuong/about.html">
+                                    <li>Thông tin cá nhân</li>
+                                </a>
+                                <a href="/ThiuPhuong/am-thuc/index.html">
+                                    <li>Con người</li>
+                                </a>
+                                <a href="/ThiuPhuong/dia-danh/index.html">
+                                    <li>Phong cảnh</li>
+                                </a>
+                                <a href="/ThiuPhuong/contact.html">
+                                    <li>Contact</li>
+                                </a>
                             </h3>
                         </ol>
                     </div>
@@ -295,16 +332,16 @@
                     <form action="" class="search" method="post">
                         <input type="text" class="searchTerm" placeholder="Bạn muốn tìm gì?">
                         <button type="submit" class="searchButton">
-                          Search
-                       </button>
+                            Search
+                        </button>
                 </td>
             </tr>
         </table>
         <!-- <h2 align="center">Biển Cần Giờ - Vùng biển ĐẸP ôn hòa ngay gần Sài Gòn</h2>
 
         <ul>
-            <h1 align="center" title="Vô đây nek"><a href="/am-thuc/index.html"><li>Ẩm thực</li></a>
-                <a href="/dia-danh/index.html"><li>Phong cảnh</li></a></h1>
+            <h1 align="center" title="Vô đây nek"><a href="/ThiuPhuong/am-thuc/index.html"><li>Ẩm thực</li></a>
+                <a href="/ThiuPhuong/dia-danh/index.html"><li>Phong cảnh</li></a></h1>
         </ul> -->
     </header>
 
@@ -317,57 +354,82 @@
                     <br>
                     <span></span>
                 </h2>
-               
+
             </div>
             <div class="box-right">
-                <img src="/image/dia-danh/rung-duoc.jpg" alt="">
-                <img src="/image/dia-danh/pha-can-gio-vung-tau.jpg" alt="">
-                <img src="/image/dia-danh/dao-khi.jpg" alt="">
+                <img src="/ThiuPhuong/image/dia-danh/rung-duoc.jpg" alt="">
+                <img src="/ThiuPhuong/image/dia-danh/pha-can-gio-vung-tau.jpg" alt="">
+                <img src="/ThiuPhuong/image/dia-danh/dao-khi.jpg" alt="">
             </div>
         </div>
     </nav>
     <aside>
-        
+
     </aside>
     <article>
         <h1>Biển Cần Giờ - Vùng biển ĐẸP ôn hòa ngay gần Sài Gòn</h1><br>
-    <p>Nhắc đến những địa điểm du lịch Sài Gòn nội thành, du khách sẽ nghĩ ngay đến Dinh Độc Lập, Nhà thờ Đức Bà, Bưu điện thành phố hay chợ Bến Thành… Còn với khu vực ngoại thành, một địa điểm hứa hẹn sẽ mang đến cho bạn nhiều trải nghiệm thú vị, đó chính là biển Cần Giờ, hay còn có tên gọi khác là biển 30/4 Cần Giờ. </p>
-    <p>Biển Cần Giờ thuộc tỉnh nào? Đây là vùng biển nằm trên địa phận của làng Thạnh Thới, Long Hòa, huyện Cần Giờ, Thành phố Hồ Chí Minh, cách trung tâm thành phố khoảng 50km.  </p>
-    <h2>Du lịch biển Cần Giờ có gì vui? </h2>
-    <h3>1. Những bãi cát đen có 1-0-2 của biển Cần Giờ</h3>
-    <!-- <img src="/dia-danh/Bien-den.png"> -->
-    <!-- <div><i>Biển 30/4 huyện Cần Giờ</i></div> -->
-    <p>Khác với sự ồn ào, tấp nập của những địa điểm du lịch biển khác, biển Cần Giờ vắng lặng, yên bình hơn rất nhiều. Các dịch vụ ở đây vẫn chưa phát triển nhiều nên bạn có thể thỏa sức vui chơi cùng bạn bè, người thân, tận hưởng không khí tự do, khoáng đạt. Là vùng biển được bồi đắp nhiều phù sa, bởi vậy biển ở đây có màu đen đặc trưng. Biển Cần Giờ có tắm được không? Nếu muốn tắm biển, bạn sẽ phải đi bộ ra một đoạn khá xa. Tuy nhiên, cũng chính màu đen của bãi cát lại là điều níu chân du khách đến tham quan, vừa khám phá những điều mới lạ, vừa thỏa sức chụp ảnh “sống ảo”. Bờ biển rất vắng và rộng, vì vậy, không gian ở đây rất thích hợp để đi dạo biển, cắm trại,....</p>
-    <h3>2. Văn hóa bán hàng lịch sự, dễ chịu tại biển Cần Giờ </h3>
-    <p>Nhiều du khách khi ghé thăm biển Cần Giờ vô cùng ấn tượng với văn hóa bán hàng của các tiểu thương nơi đây. Các khu vực ăn uống nghỉ ngơi và khu tắm biển được phân tách riêng biệt để khách không bị làm phiền. 
+        <p>Nhắc đến những địa điểm du lịch Sài Gòn nội thành, du khách sẽ nghĩ ngay đến Dinh Độc Lập, Nhà thờ Đức Bà,
+            Bưu điện thành phố hay chợ Bến Thành… Còn với khu vực ngoại thành, một địa điểm hứa hẹn sẽ mang đến cho bạn
+            nhiều trải nghiệm thú vị, đó chính là biển Cần Giờ, hay còn có tên gọi khác là biển 30/4 Cần Giờ. </p>
+        <p>Biển Cần Giờ thuộc tỉnh nào? Đây là vùng biển nằm trên địa phận của làng Thạnh Thới, Long Hòa, huyện Cần Giờ,
+            Thành phố Hồ Chí Minh, cách trung tâm thành phố khoảng 50km. </p>
+        <h2>Du lịch biển Cần Giờ có gì vui? </h2>
+        <h3>1. Những bãi cát đen có 1-0-2 của biển Cần Giờ</h3>
+        <!-- <img src="/ThiuPhuong/dia-danh/Bien-den.png"> -->
+        <!-- <div><i>Biển 30/4 huyện Cần Giờ</i></div> -->
+        <p>Khác với sự ồn ào, tấp nập của những địa điểm du lịch biển khác, biển Cần Giờ vắng lặng, yên bình hơn rất
+            nhiều. Các dịch vụ ở đây vẫn chưa phát triển nhiều nên bạn có thể thỏa sức vui chơi cùng bạn bè, người thân,
+            tận hưởng không khí tự do, khoáng đạt. Là vùng biển được bồi đắp nhiều phù sa, bởi vậy biển ở đây có màu đen
+            đặc trưng. Biển Cần Giờ có tắm được không? Nếu muốn tắm biển, bạn sẽ phải đi bộ ra một đoạn khá xa. Tuy
+            nhiên, cũng chính màu đen của bãi cát lại là điều níu chân du khách đến tham quan, vừa khám phá những điều
+            mới lạ, vừa thỏa sức chụp ảnh “sống ảo”. Bờ biển rất vắng và rộng, vì vậy, không gian ở đây rất thích hợp để
+            đi dạo biển, cắm trại,....</p>
+        <h3>2. Văn hóa bán hàng lịch sự, dễ chịu tại biển Cần Giờ </h3>
+        <p>Nhiều du khách khi ghé thăm biển Cần Giờ vô cùng ấn tượng với văn hóa bán hàng của các tiểu thương nơi đây.
+            Các khu vực ăn uống nghỉ ngơi và khu tắm biển được phân tách riêng biệt để khách không bị làm phiền.
 
-        Ngoài ra, việc mua bán ở đây là “thuận mua vừa bán”, tuyệt đối không chèo kéo khách. Bạn cũng hoàn toàn yên tâm về mức chi phí khi ăn uống hay sử dụng các dịch vụ bởi kinh doanh ở đây có tiêu chí không hét giá, khách không phải mặc cả quá nhiều.</p>
-    <h3>3. Trải nghiệm đi phà biển Cần Giờ Vũng Tàu mới toanh</h3>
-    <p> <span>Bến Cần Giờ:</span><span> Bến đò Tắc Suất, thuộc địa phận thị trấn Cần Thạnh, huyện Cần Giờ, TP. Hồ Chí Minh.</p>
-    <p> Bến Vũng Tàu: Bến tàu khách của TP. Vũng Tàu, gần với khu vực cảng vụ hàng hải tại Phường 1.</div></p>
-    <img src="/image/dia-danh/pha-can-gio-vung-tau.jpg">
-    <div id="v1">
-        <div><u>Giá vé tham khảo: </u></div>
-        <div><i>Vé chở khách: 70.000 VNĐ/người</i></div>
-        <div><i>Vé xe máy, xe đạp, xe đạp điện: 50.000 VNĐ/xe</i></div>
-        <div><i>Vé ô tô 4 chỗ, 7 – 9 chỗ, ô tô bán tải: 350.000 VNĐ/xe</i></div>    
-    </div>
-    <h3>4. Biển Cần Giờ ăn hải sản ở đâu ngon rẻ?</h3>
-    <div><p>Du lịch trong ngày bạn nên lựa chọn ăn trưa Sài Gòn ngay tại biển Cần Giờ để có thể thỏa sức khám phá nhiều món ngon đặc sản tại đây. Vùng biển này là vùng nước lợ, vì vậy nguồn hải sản rất phong phú, đa dạng, bạn có thể lựa chọn ăn: tôm sú, tôm sắt, nghêu, cua cúm núm… với mức giá cực rẻ.</p></div>
-    <div><p>Ngoài ra, bạn cũng có thể ghé thăm chợ Cần Giờ, tại đây có nguồn hải sản tươi sống rất ngon, các tiểu thương cũng sẵn sàng chế biến ngay tại chỗ cho du khách với chi phí rẻ.</p> </div>
-    <img src="/image/am-thuc/am-thuc2.jpg">
-    <div id="v1">
-        <div><i>Chợ huyện Cần Giờ</i><div>
-    </div>
-  
-        <p>Không để khách du lịch đợi lâu nữa. Sau đây là những món ăn và những địa điểm mà du khách nhất định phải thử khi đến Cần Giờ. LET'S GOOO</p>
-        <p><i><u>Xem thông tin chi tiết của các món ăn vui lòng click vào ảnh</u></i></p><br>
-        <table border="0">
-            <tr>
-                <td width="32%"><a href="/am-thuc/index.html"><img src="/image/am-thuc/amm-thuc-1.jpg    "></a></td>
-                <td width="30%"><a href="/dia-danh/index.html"><img src="/image/dia-danh/rung-duoc.jpg"></a></td>
-            </tr>
-        </table>
+            Ngoài ra, việc mua bán ở đây là “thuận mua vừa bán”, tuyệt đối không chèo kéo khách. Bạn cũng hoàn toàn yên
+            tâm về mức chi phí khi ăn uống hay sử dụng các dịch vụ bởi kinh doanh ở đây có tiêu chí không hét giá, khách
+            không phải mặc cả quá nhiều.</p>
+        <h3>3. Trải nghiệm đi phà biển Cần Giờ Vũng Tàu mới toanh</h3>
+        <p> <span>Bến Cần Giờ:</span><span> Bến đò Tắc Suất, thuộc địa phận thị trấn Cần Thạnh, huyện Cần Giờ, TP. Hồ
+                Chí Minh.</p>
+        <p> Bến Vũng Tàu: Bến tàu khách của TP. Vũng Tàu, gần với khu vực cảng vụ hàng hải tại Phường 1.</div>
+        </p>
+        <img src="/ThiuPhuong/image/dia-danh/pha-can-gio-vung-tau.jpg">
+        <div id="v1">
+            <div><u>Giá vé tham khảo: </u></div>
+            <div><i>Vé chở khách: 70.000 VNĐ/người</i></div>
+            <div><i>Vé xe máy, xe đạp, xe đạp điện: 50.000 VNĐ/xe</i></div>
+            <div><i>Vé ô tô 4 chỗ, 7 – 9 chỗ, ô tô bán tải: 350.000 VNĐ/xe</i></div>
+        </div>
+        <h3>4. Biển Cần Giờ ăn hải sản ở đâu ngon rẻ?</h3>
+        <div>
+            <p>Du lịch trong ngày bạn nên lựa chọn ăn trưa Sài Gòn ngay tại biển Cần Giờ để có thể thỏa sức khám phá
+                nhiều món ngon đặc sản tại đây. Vùng biển này là vùng nước lợ, vì vậy nguồn hải sản rất phong phú, đa
+                dạng, bạn có thể lựa chọn ăn: tôm sú, tôm sắt, nghêu, cua cúm núm… với mức giá cực rẻ.</p>
+        </div>
+        <div>
+            <p>Ngoài ra, bạn cũng có thể ghé thăm chợ Cần Giờ, tại đây có nguồn hải sản tươi sống rất ngon, các tiểu
+                thương cũng sẵn sàng chế biến ngay tại chỗ cho du khách với chi phí rẻ.</p>
+        </div>
+        <img src="/ThiuPhuong/image/am-thuc/am-thuc2.jpg">
+        <div id="v1">
+            <div><i>Chợ huyện Cần Giờ</i>
+                <div>
+                </div>
+
+                <p>Không để khách du lịch đợi lâu nữa. Sau đây là những món ăn và những địa điểm mà du khách nhất định
+                    phải thử khi đến Cần Giờ. LET'S GOOO</p>
+                <p><i><u>Xem thông tin chi tiết của các món ăn vui lòng click vào ảnh</u></i></p><br>
+                <table border="0">
+                    <tr>
+                        <td width="32%"><a href="/ThiuPhuong/am-thuc/index.html"><img src="/ThiuPhuong/image/am-thuc/amm-thuc-1.jpg    "></a>
+                        </td>
+                        <td width="30%"><a href="/ThiuPhuong/dia-danh/index.html"><img src="/ThiuPhuong/image/dia-danh/rung-duoc.jpg"></a>
+                        </td>
+                    </tr>
+                </table>
     </article>
     <aside></aside>
     <footer>
@@ -375,7 +437,8 @@
         <h3>Phạm Thị Thu Phương</h3>
         <h3>12DHTH15</h3>
         <h3>Tiết 7-11 thứ 4</h3>
-        
+
     </footer>
 </body>
+
 </html>
