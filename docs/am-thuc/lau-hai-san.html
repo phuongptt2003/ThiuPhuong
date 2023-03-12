@@ -1,193 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lẩu hải sản</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
 
-   * {
-          box-sizing: border-box;
-        }
-        
-        body {
-          font-family: Arial;
-        }
-        
-        header {
-          padding: 50px;
-          color: rgb(67, 182, 32);
-          background-image: url("/TieuLuan/image/am-thuc/lau-haisan-banner.webp");
-        }
-      
-        nav {
-            float: left;
-            width: 20%;
-            height: 6800px; 
-            background: #fbfaf9;
-            padding: 25px;
-            }
-            article {
-            float: left;
-            width: 80%;
-            background-color: #f2edea;
-            height: 6800px; 
-            padding: 20px;
-            }
+      body {
+        font-family: Arial;
+      }
 
-        article h1{
-            font-size: 35px;
-            text-align: center;
-            color:rgb(19, 212, 115)
-        }
-        article h3{
-            font-size: 25px;
-        }
-        article p{
-            font-size: 20px;
-        }
-        article video{
-            display: block;
-                margin-left: auto;
-                margin-right:auto; 
-        }
-            footer {
-            background-color: #e06868;
-            padding: 100px;
-            width: 100%;
-            text-align: center;
-            font-size: 30px;
-            color: white;
-            }
-   
-         /* menu ngang */
-        .menungang li{
-            float: left;
-        }
-        .menungang li {
-            display: inline-block;
-            color:rgb(31, 12, 99);
-            text-align: center;
-            padding: 14px 16px;
-            font-size: 30px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: none;/*  làm mất dấu gạch chân */
-        }
-        .menungang li:hover{
-            background-color: rgb(231, 46, 46);
-        }
-        /* menu dọc */
-        .menu ol{
-            font-size: 30px;
-            text-decoration: none;/*  làm mất dấu gạch chân */
-        }
-        .menu li {
-            display: inline-block;
-            color:rgb(31, 12, 99);
-            text-align: center;
-            padding: 10px;
-            font-size: 28px;
-            font-family: Arial, Helvetica, sans-serif; 
-        }
-        .menu li:hover{
-            background-color: rgb(240, 85, 232);
-        }
-    
+      header {
+        padding: 50px;
+        color: rgb(67, 182, 32);
+        background-image: url("/image/am-thuc/lau-haisan-banner.webp");
+      }
+
+      nav {
+        float: left;
+        width: 20%;
+        height: 6800px;
+        background: #fbfaf9;
+        padding: 25px;
+      }
+      article {
+        float: left;
+        width: 80%;
+        background-color: #f2edea;
+        height: 6800px;
+        padding: 20px;
+      }
+
+      article h1 {
+        font-size: 35px;
+        text-align: center;
+        color: rgb(19, 212, 115);
+      }
+      article h3 {
+        font-size: 25px;
+      }
+      article p {
+        font-size: 20px;
+      }
+      article video {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      footer {
+        background-color: #e06868;
+        padding: 100px;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+      }
+
+      /* menu ngang */
+      .menungang li {
+        float: left;
+      }
+      .menungang li {
+        display: inline-block;
+        color: rgb(31, 12, 99);
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none; /*  làm mất dấu gạch chân */
+      }
+      .menungang li:hover {
+        background-color: rgb(231, 46, 46);
+      }
+      /* menu dọc */
+      .menu ol {
+        font-size: 30px;
+        text-decoration: none; /*  làm mất dấu gạch chân */
+      }
+      .menu li {
+        display: inline-block;
+        color: rgb(31, 12, 99);
+        text-align: center;
+        padding: 10px;
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .menu li:hover {
+        background-color: rgb(240, 85, 232);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <table border="0" background="" width="100%" height="70%">
-            <tr height="70%">
-                <td>
-                    <h1 align="center" >
-                        banner
-                    </h1>
-                </td>
-            </tr>
-        </table>
+      <table border="0" background="" width="100%" height="70%">
+        <tr height="70%">
+          <td>
+            <h1 align="center">banner</h1>
+          </td>
+        </tr>
+      </table>
     </header>
 
-    
     <nav>
-        <div class="menu">
-            <ol>
-                <table bgcolor="yellow">
-                    <tr>
-                        <td>
-                            <a href="/TieuLuan/index.html" target="_blank" title="Chuyển tới trang ..."><li>Trang chủ</li></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="/TieuLuan/about.html"><li>Thông tin cá nhân</li></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="/TieuLuan/am-thuc/index.html"><li>Con người</li></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="/TieuLuan/dia-danh/index.html"><li>Phong cảnh</li></a></td>
-                    </tr>
-                    <tr>
-                       <td><a href="/TieuLuan/contact.html"><li>Contact</li></a></td> 
-                    </tr>
-                </table>
-            </ol>
-        </div>
+      <div class="menu">
+        <ol>
+          <table bgcolor="yellow">
+            <tr>
+              <td>
+                <a
+                  href="/index.html"
+                  target="_blank"
+                  title="Chuyển tới trang ..."
+                  ><li>Trang chủ</li></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/about.html"><li>Thông tin cá nhân</li></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/am-thuc/index.html"><li>Con người</li></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/dia-danh/index.html"><li>Phong cảnh</li></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/contact.html"><li>Contact</li></a>
+              </td>
+            </tr>
+          </table>
+        </ol>
+      </div>
     </nav>
     <article>
-        <h1>Top 10 vựa lẩu hải sản Cần Giờ tươi ngon, nhiều món hấp dẫn</h1>
-        <h3>1. Nhà hàng Điền Trang – Tổ hợp hải sản tươi nhất Cần Giờ</h3>
-        <ul>
-            <li><p><b>Địa chỉ:</b> 161 Long Thạnh, Long Hoà, Cần Giờ, Thành phố Hồ Chí Minh</p></li>
-            <li><p><b>Giờ mở cửa:</b> 7:00 – 22:30</p></li>
-            <li><p><b>Giá khoảng:</b> 150.000 – 450.000 VNĐ</p></li>
-        </ul>
-        <p>Không gian quán thiết kế theo phong cách nhà tranh miền Nam Bộ vô cùng hòa hợp với thiên nhiên và mát mẻ nên thơ. Cảm giác được ngồi dưới mái nhà tranh bạn sẽ cảm thấy sự khoan khoái, dễ chịu mà chẳng thể chiếc điều hòa nào có thể sánh bằng.</p>
-        <img src="/TieuLuan/image/am-thuc/lau-haisan-1.jpg">
-        <p>Quán phục vụ menu vô cùng đa dạng: từ ghẹ, cua, cá hấp nướng sả hay đến những nồi lẩu hải sản vô cùng đậm vị. Hải sản tại Điền Trang được đánh giá rất tươi, ngọt mà giá thành lại vô cùng phải chăng nên quán luôn thu hút được rất nhiều khách du lịch ghé qua khi tới đây du lịch.</p>
-        <h3>2. Nhà hàng Duyên Hải</h3>
-        <ul>
-            <li><p><b>Địa chỉ:</b> 551/2 khu phố Miễu Ba,thị trấn Cần Thạnh, Cần Giờ, TPHCM</p></li>
-            <li><p><b>Giờ mở cửa:</b> 7:00 – 22:30</p></li>
-            <li><p><b>Giá khoảng:</b> 100.000 – 300.000 VNĐ</p></li>
-        </ul>
-        <p>Nhà hàng Duyên Hải chuyên phục vụ hội nghị, sự kiện, tiệc cưới của huyện Cần Giờ. Không gian 3 tầng rộng rãi sức chứa lên đến hàng trăm thực khách. Nhà hàng được thiết kế theo kiến trúc phương Tây hiện đại, năng động và phóng khoáng với những bậc cầu thang ngoài trời uốn lượn rất tinh tế.</p>
-        <img src="/TieuLuan/image/am-thuc/lau-hs-2.jpg">
-        <p>Bên cạnh khu vực ngồi trong nhà, Duyên Hải còn có khu vực ngồi cạnh sông vô cùng mát mẻ. Là nhà hàng trứ danh mảnh đất Cần Giờ nên nơi đây phục vụ vô vàn những món ăn hải sản đặc trưng như: Nghêu hấp lá quế, Cá ngát chiên giòn, Lẩu cua lá giang hay Ốc giác gỏi cổ hũ dừa</p>
-        <h3>3. Làng nướng 54 – hải sản Cần Giờ chuyên món nướng</h3>
-        <ul>
-            <li><p><b>Địa chỉ:</b> Thạnh Thới, Long Hoà, Cần Giờ, TPHCM            </p></li>
-            <li><p><b>Giờ mở cửa:</b> 7:00 – 22:30</p></li>
-            <li><p><b>Giá khoảng:</b> 100.000 – 300.000 VNĐ</p></li>
-        </ul>
-        <p>Những món nướng thơm nức mũi khi bước chân vào Làng nướng 54. Đầy đủ đa dạng tất cả những món hải sản được đặt trên vỉ nướng xèo xèo chảy mỡ xoăn lại chắc thịt. Từ món tôm nướng, cua nướng, ghẹ nướng hay đến cá nướng…được chấm với gia vị bí truyền nên những món nướng càng trở nên hấp dẫn hơn.</p>
-        <img src="/TieuLuan/image/am-thuc/lau-haisan-3.jpg">
-        <p>Đa dạng món nướng là như vậy, Làng nướng 54 còn phục vụ khách hàng những bữa tiệc lẩu hải sản ngon chất lượng, xứng đáng đạt chuẩn cạnh tranh với nhiều nhà hàng trên thành phố. Nước lẩu thanh đạm, ngọt nhẹ nhúng thêm đồ hải sản thì không còn gì tuyệt vời hơn.        </p>
-        <p>Không gian quán mang đậm phong cách miền Nam Bộ sông nước, rất hữu tình, rất thoáng đãng, mát mẻ. Nếu có đến đây đừng quên thưởng thức những món nướng ở quán hải sản Cần Giờ này nhé!</p>
-        <h3>4. Đảo ngọc quán</h3>
-        <ul>
-            <li><p><b>Địa chỉ:</b> 333 Rừng Sác, Bình Khánh, Cần Giờ, Thành phố Hồ Chí Minh. </p></li>
-            <li><p><b>Giờ mở cửa:</b> 7:00 – 22:30</p></li>
-            <li><p><b>Giá khoảng:</b> 50.000 – 100.000 VNĐ</p></li>
-        </ul>
-        <p>Miền Tây không chỉ nổi tiếng với những bức tranh sông nước nên thơ trữ tình mà còn nổi tiếng với những món ăn vô cùng đậm đà tại Đảo Ngọc Quán. Không gian Đảo Ngọc Quán bình dị đậm chất miền Nam Bộ. Chỗ ngồi thoải mái rộng rãi, đón gió khí trời nên nếu đến đây bạn sẽ có những trải nghiệm thú vị như đang được vùng vẫy giữa đảo ngoài xa.</p>
-        <img src="/TieuLuan/image/am-thuc/lau-haisan-4.jpg">
-        <p>Đảo Ngọc Quán còn nổi tiếng với món lẩu Mắm, thật khó để quên được mùi vị của món ăn này. Nước dùng thanh ngọt, kết hợp với vị đậm đà của mắm và những vị thơm của các loại rau ăn cùng như: rau đắng, kèo nèo, rau muống, rau cải xanh, hoa bí, hoa súng.        </p>
-        
-        <video src="/TieuLuan/video/lau-haisan.mp4" controls></video>
+      <h1>Top 10 vựa lẩu hải sản Cần Giờ tươi ngon, nhiều món hấp dẫn</h1>
+      <h3>1. Nhà hàng Điền Trang – Tổ hợp hải sản tươi nhất Cần Giờ</h3>
+      <ul>
+        <li>
+          <p>
+            <b>Địa chỉ:</b> 161 Long Thạnh, Long Hoà, Cần Giờ, Thành phố Hồ Chí
+            Minh
+          </p>
+        </li>
+        <li>
+          <p><b>Giờ mở cửa:</b> 7:00 – 22:30</p>
+        </li>
+        <li>
+          <p><b>Giá khoảng:</b> 150.000 – 450.000 VNĐ</p>
+        </li>
+      </ul>
+      <p>
+        Không gian quán thiết kế theo phong cách nhà tranh miền Nam Bộ vô cùng
+        hòa hợp với thiên nhiên và mát mẻ nên thơ. Cảm giác được ngồi dưới mái
+        nhà tranh bạn sẽ cảm thấy sự khoan khoái, dễ chịu mà chẳng thể chiếc
+        điều hòa nào có thể sánh bằng.
+      </p>
+      <img src="/image/am-thuc/lau-haisan-1.jpg" />
+      <p>
+        Quán phục vụ menu vô cùng đa dạng: từ ghẹ, cua, cá hấp nướng sả hay đến
+        những nồi lẩu hải sản vô cùng đậm vị. Hải sản tại Điền Trang được đánh
+        giá rất tươi, ngọt mà giá thành lại vô cùng phải chăng nên quán luôn thu
+        hút được rất nhiều khách du lịch ghé qua khi tới đây du lịch.
+      </p>
+      <h3>2. Nhà hàng Duyên Hải</h3>
+      <ul>
+        <li>
+          <p>
+            <b>Địa chỉ:</b> 551/2 khu phố Miễu Ba,thị trấn Cần Thạnh, Cần Giờ,
+            TPHCM
+          </p>
+        </li>
+        <li>
+          <p><b>Giờ mở cửa:</b> 7:00 – 22:30</p>
+        </li>
+        <li>
+          <p><b>Giá khoảng:</b> 100.000 – 300.000 VNĐ</p>
+        </li>
+      </ul>
+      <p>
+        Nhà hàng Duyên Hải chuyên phục vụ hội nghị, sự kiện, tiệc cưới của huyện
+        Cần Giờ. Không gian 3 tầng rộng rãi sức chứa lên đến hàng trăm thực
+        khách. Nhà hàng được thiết kế theo kiến trúc phương Tây hiện đại, năng
+        động và phóng khoáng với những bậc cầu thang ngoài trời uốn lượn rất
+        tinh tế.
+      </p>
+      <img src="/image/am-thuc/lau-hs-2.jpg" />
+      <p>
+        Bên cạnh khu vực ngồi trong nhà, Duyên Hải còn có khu vực ngồi cạnh sông
+        vô cùng mát mẻ. Là nhà hàng trứ danh mảnh đất Cần Giờ nên nơi đây phục
+        vụ vô vàn những món ăn hải sản đặc trưng như: Nghêu hấp lá quế, Cá ngát
+        chiên giòn, Lẩu cua lá giang hay Ốc giác gỏi cổ hũ dừa
+      </p>
+      <h3>3. Làng nướng 54 – hải sản Cần Giờ chuyên món nướng</h3>
+      <ul>
+        <li>
+          <p><b>Địa chỉ:</b> Thạnh Thới, Long Hoà, Cần Giờ, TPHCM</p>
+        </li>
+        <li>
+          <p><b>Giờ mở cửa:</b> 7:00 – 22:30</p>
+        </li>
+        <li>
+          <p><b>Giá khoảng:</b> 100.000 – 300.000 VNĐ</p>
+        </li>
+      </ul>
+      <p>
+        Những món nướng thơm nức mũi khi bước chân vào Làng nướng 54. Đầy đủ đa
+        dạng tất cả những món hải sản được đặt trên vỉ nướng xèo xèo chảy mỡ
+        xoăn lại chắc thịt. Từ món tôm nướng, cua nướng, ghẹ nướng hay đến cá
+        nướng…được chấm với gia vị bí truyền nên những món nướng càng trở nên
+        hấp dẫn hơn.
+      </p>
+      <img src="/image/am-thuc/lau-haisan-3.jpg" />
+      <p>
+        Đa dạng món nướng là như vậy, Làng nướng 54 còn phục vụ khách hàng những
+        bữa tiệc lẩu hải sản ngon chất lượng, xứng đáng đạt chuẩn cạnh tranh với
+        nhiều nhà hàng trên thành phố. Nước lẩu thanh đạm, ngọt nhẹ nhúng thêm
+        đồ hải sản thì không còn gì tuyệt vời hơn.
+      </p>
+      <p>
+        Không gian quán mang đậm phong cách miền Nam Bộ sông nước, rất hữu tình,
+        rất thoáng đãng, mát mẻ. Nếu có đến đây đừng quên thưởng thức những món
+        nướng ở quán hải sản Cần Giờ này nhé!
+      </p>
+      <h3>4. Đảo ngọc quán</h3>
+      <ul>
+        <li>
+          <p>
+            <b>Địa chỉ:</b> 333 Rừng Sác, Bình Khánh, Cần Giờ, Thành phố Hồ Chí
+            Minh.
+          </p>
+        </li>
+        <li>
+          <p><b>Giờ mở cửa:</b> 7:00 – 22:30</p>
+        </li>
+        <li>
+          <p><b>Giá khoảng:</b> 50.000 – 100.000 VNĐ</p>
+        </li>
+      </ul>
+      <p>
+        Miền Tây không chỉ nổi tiếng với những bức tranh sông nước nên thơ trữ
+        tình mà còn nổi tiếng với những món ăn vô cùng đậm đà tại Đảo Ngọc Quán.
+        Không gian Đảo Ngọc Quán bình dị đậm chất miền Nam Bộ. Chỗ ngồi thoải
+        mái rộng rãi, đón gió khí trời nên nếu đến đây bạn sẽ có những trải
+        nghiệm thú vị như đang được vùng vẫy giữa đảo ngoài xa.
+      </p>
+      <img src="/image/am-thuc/lau-haisan-4.jpg" />
+      <p>
+        Đảo Ngọc Quán còn nổi tiếng với món lẩu Mắm, thật khó để quên được mùi
+        vị của món ăn này. Nước dùng thanh ngọt, kết hợp với vị đậm đà của mắm
+        và những vị thơm của các loại rau ăn cùng như: rau đắng, kèo nèo, rau
+        muống, rau cải xanh, hoa bí, hoa súng.
+      </p>
 
-
+      <video src="/video/lau-haisan.mp4" controls></video>
     </article>
 
     <footer>
-        <h3>2001216066</h3>
-        <h3>Phạm Thị Thu Phương</h3>
-        <h3>12DHTH15</h3>
-        <h3>Tiết 7-11 thứ 4</h3>
+      <h3>2001216066</h3>
+      <h3>Phạm Thị Thu Phương</h3>
+      <h3>12DHTH15</h3>
+      <h3>Tiết 7-11 thứ 4</h3>
     </footer>
-   
-</body>
+  </body>
 </html>

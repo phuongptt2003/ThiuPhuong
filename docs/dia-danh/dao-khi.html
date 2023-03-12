@@ -1,179 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0" nonce="u7OZZPD7"></script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0"
+      nonce="u7OZZPD7"
+    ></script>
     <title>Đảo khỉ</title>
     <style>
-        * {
-          box-sizing: border-box;
-        }
-        
-        body {
-          font-family: Arial;
-        }
-        
-        header {
-          padding: 100px;
-          height: 30%;
-          color: rgb(252, 239, 51);
-          background-image: url("/TieuLuan/image/dia-danh/dao-khi-3.jfif");
-        }
-        aside{
-            float: left;
-            width: 20%;
-            height: 4000px; 
-            background: #fbfaf9;
-            /* background-image: url("/TieuLuan/image/dia-danh/background-nham.jpg"); */
-            padding: 25px;
-        }
-        aside img{
-            border-radius: 40px;
-            width: 90%;
-        }
-        nav {
-            float: left;
-            width: 15%;
-            height: 4000px; 
-            background: #fbfaf9;
-            /* background-image: url("/TieuLuan/image/dia-danh/background-nham.jpg"); */
-            padding: 25px;
-            }
-            article {
-            float: left;
-            width: 65%;
-            /* background-color: #e7bba0; */
-            background-image: url("/TieuLuan/image/dia-danh/background-nham.jpg");
-            height: 4000px; 
-            padding: 20px;
-            }
-            article h1{
-                font-size: 35px;
-                color:rgb(171, 166, 23);
-                text-align: center;
-            }
-            article h3{
-                font-size: 28px;
-                color:#e06868
-            }
-            article h4{
-                font-size: 23px;
-            }
-            article li, p{
-                font-size: 21px;
-                padding: 8px;
-            }
-       
-             
-            footer {
-            background-color: #ee7171;
-            padding: 100px;
-            width: 100%;
-            text-align: center;
-            font-size: 30px;
-            
-            }
+      * {
+        box-sizing: border-box;
+      }
 
-             /* menu dọc */
-        .menu ol{
-            font-size: 20px;
-            text-decoration: none;/*  làm mất dấu gạch chân */
-        }
-        .menu li {
-            display: inline-block;
-            color:rgb(31, 12, 99);
-            text-align: center;
-            padding: 10px;
-            font-size: 22px;
-            font-family: Arial, Helvetica, sans-serif; 
-        }
-        .menu li:hover{
-            background-color: rgb(22, 220, 151);
-        }
+      body {
+        font-family: Arial;
+      }
+
+      header {
+        padding: 100px;
+        height: 30%;
+        color: rgb(252, 239, 51);
+        background-image: url("/image/dia-danh/dao-khi-3.jfif");
+      }
+      aside {
+        float: left;
+        width: 20%;
+        height: 4000px;
+        background: #fbfaf9;
+        /* background-image: url("/image/dia-danh/background-nham.jpg"); */
+        padding: 25px;
+      }
+      aside img {
+        border-radius: 40px;
+        width: 90%;
+      }
+      nav {
+        float: left;
+        width: 15%;
+        height: 4000px;
+        background: #fbfaf9;
+        /* background-image: url("/image/dia-danh/background-nham.jpg"); */
+        padding: 25px;
+      }
+      article {
+        float: left;
+        width: 65%;
+        /* background-color: #e7bba0; */
+        background-image: url("/image/dia-danh/background-nham.jpg");
+        height: 4000px;
+        padding: 20px;
+      }
+      article h1 {
+        font-size: 35px;
+        color: rgb(171, 166, 23);
+        text-align: center;
+      }
+      article h3 {
+        font-size: 28px;
+        color: #e06868;
+      }
+      article h4 {
+        font-size: 23px;
+      }
+      article li,
+      p {
+        font-size: 21px;
+        padding: 8px;
+      }
+
+      footer {
+        background-color: #ee7171;
+        padding: 100px;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+      }
+
+      /* menu dọc */
+      .menu ol {
+        font-size: 20px;
+        text-decoration: none; /*  làm mất dấu gạch chân */
+      }
+      .menu li {
+        display: inline-block;
+        color: rgb(31, 12, 99);
+        text-align: center;
+        padding: 10px;
+        font-size: 22px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .menu li:hover {
+        background-color: rgb(22, 220, 151);
+      }
     </style>
-</head>
-<body>
-    <header>
-
-    </header>
+  </head>
+  <body>
+    <header></header>
     <nav>
-        <div class="menu">
-            <ol>
-                <table bgcolor="">
-                    <tr>
-                        <td>
-                            <a href="/TieuLuan/index.html" target="_blank" title="Chuyển tới trang ..."><li>Trang chủ</li></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <a href="/TieuLuan/about.html"><li>Thông tin cá nhân</li></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><a href="/TieuLuan/am-thuc/index.html"><li>Con người</li></a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="/TieuLuan/dia-danh/index.html"><li>Phong cảnh</li></a></td>
-                    </tr>
-                    <tr>
-                       <td><a href="/TieuLuan/contact.html"><li>Contact</li></a></td> 
-                    </tr>
-                </table>
-            </ol>
-        </div>
+      <div class="menu">
+        <ol>
+          <table bgcolor="">
+            <tr>
+              <td>
+                <a
+                  href="/index.html"
+                  target="_blank"
+                  title="Chuyển tới trang ..."
+                  ><li>Trang chủ</li></a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/about.html"><li>Thông tin cá nhân</li></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/am-thuc/index.html"><li>Con người</li></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/dia-danh/index.html"><li>Phong cảnh</li></a>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a href="/contact.html"><li>Contact</li></a>
+              </td>
+            </tr>
+          </table>
+        </ol>
+      </div>
     </nav>
     <article>
-        <div class="fb-like" data-href="http://127.0.0.1:5500/TieuLuan/dia-danh/vam-sat.html" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
-       <h1>DU LỊCH ĐẢO KHỈ CẦN GIỜ – THAM QUAN HOANG DÃ NGAY SÀI GÒN</h1>
-       <p><b>Tìm hiểu những nét đặc trưng nổi bật của Đảo khỉ Cần Giờ cũng như tham khảo giá vé tham quan ở Đảo Khỉ và giới thiệu những địa điểm du lịch đảo khỉ Cần Giờ. </b></p>
-       <p>Hiện nay, <b> đảo khỉ Cần Giờ</b> là một trong những địa điểm tham quan, du lịch nổi tiếng được nhiều người ghé đến. Nơi này thuộc khu dự trữ sinh quyển được đánh giá là tốt nhất tại Việt Nam với những cánh rừng được sông nước bao quanh, mang đến không gian khám phá, trải nghiệm mới mẻ. Vậy đảo khỉ Cần Giờ có gì chơi? và khí hậu ở đảo Khỉ như thế nào? Mời bạn cùng KDL Bò Cạp Vàng theo dõi trong bài viết sau đây.        </p>
-        <img src="/TieuLuan/image/dia-danh/du-lich-dao-khi-can-gio-1.jpg">
-        <h3>I. ĐẢO KHỈ CẦN GIỜ Ở ĐÂU?</h3>
-        <p>Hiện nay, đảo Khỉ Cần Giờ là một trong những địa điểm du lịch nổi tiếng của huyện Cần Giờ (tp. Hồ Chí Minh). Cách trung tâm thành phố khoảng 45km và đồng thời đây chính là nơi cư trú của hơn 2000 cá thể khỉ khác nhau. Để đến được đây bạn sẽ phải đi xe máy và mất chừng 1h30p ( bao gồm cả thời gian đi phà ).</p>
-        <p>Địa điểm này khá gần thành phố, do đó bạn có thể sử dụng nhiều loại phương tiện như: xe khách, taxi, tàu hỏa, xe bus,. Trong đó, xe máy là phương tiện được nhiều người lựa chọn nhất bởi chúng sẽ giúp bạn tiết kiệm sức lực, thời gian và chi phí tối đa. Đặc biệt, dù là xe của bạn hay xe máy thuê ở Sài Gòn thì chi phí vẫn rẻ hơn nhiều so với những phương tiện trên.</p>
-        <p><b>+ Lộ trình đến Đảo Khỉ Cần Giờ:</b> Từ trung tâm Sài Gòn, bạn cần đi qua cầu Tân Thuận (quận 7), tiếp theo đó rẽ sang đường Nguyễn Văn Linh đến đường Huỳnh Tấn Phát tiếp tục chạy thẳng tới phà Bình Khánh. Gần Phà có vài quán ăn nhỏ, bạn hãy dừng chân ăn và nạp năng lượng cho 1 chuyến đi sôi động vì sang bên Đảo sẽ vắng và ít quán ăn hơn.</p>
-        <h3>II. KHÍ HẬU Ở ĐẢO KHỈ CẦN GIỜ NHƯ THẾ NÀO?</h3>
-        <p>Khí hậu ở đảo Khỉ Cần Giờ cũng không khác biệt nhiều so với trong thành phố. Tuy nhiên, vì có sông nước bao quanh và được rừng cây bao phủ nên nơi đây thường tạo cho du khách cảm giác dễ chịu, thoải mái hơn. Tại đảo khỉ cần Giờ, nhiệt độ trung bình thường sẽ dao động trong khoảng từ 25 đến 29 độ.</p>
-        <img src="/TieuLuan/image/dia-danh/dao-khi-2.jpg">
-        <h3>III. THAM KHẢO GIÁ VÉ THAM QUAN TẠI ĐẢO KHỈ CẦN GIỜ</h3>
-        <p>Giá vé vào đảo Khỉ Cần Giờ không quá đắt, chỉ khoảng 35.000đ/người, đồng thời du khách tham quan có thể dạo chơi bao lâu tùy thích, không giới hạn về thời gian. Ngoài việc có ngắm nhìn, chơi đùa cùng những chú khỉ tinh nghịch thì đây cũng là nơi để mọi người thư giãn, hít thở không khí tro trong lành giữa rừng cây hoang dã không khói bụi và ô nhiễm.</p>
-        <h3>IV. ĐẢO KHỈ CẦN GIỜ CÓ GÌ CHƠI?</h3>
-        <p>Với lợi thế nằm trong khu dự trữ sinh quyển ngập mặn lớn của nước ta, đảo Khỉ Cần Giờ hiện nay đang là điểm đến yêu thích của nhiều du khách, đặc biệt là những bạn trẻ thích ngao du, khám phá.</p>
-        <p>Không chỉ có những đoàn khách tour tham quan, nghỉ dưỡng mà các phượt thủ cũng rất thích nơi này bởi không khí trong lành, mát mẻ, đặc biệt những chú khỉ nơi  đây được sống trong môi trường hoàn toàn tự nhiên, hoang dã không bị quản thúc và giới hạn như những sở thú trong thành phố.</p>
-        <h2>1. QUAN SÁT VÀ TÌM HIỂU TẬP TÍNH LOÀI KHỈ</h2>
-        <img src="/TieuLuan/image/dia-danh/dao-khi-3.jfif">
-        <p>Loài khỉ thường có tập tính sống theo bầy đàn, tình mẫu tử sâu đậm và có tinh thần đoàn kết cộng đồng. Đến thăm đảo Khỉ Cần Giờ, bạn sẽ dễ dàng bắt gặp một số hình ảnh chúng chăm sóc lẫn nhau, chia sẻ thức ăn,…. Thường thì những chú khỉ con chưa có kĩ năng sống thì sẽ được khỉ mẹ cõng trên lưng, còn khỉ bố thì sẽ kiếm thức ăn mang về cho gia đình.</p>
-        <h2>2. THAM QUAN BẰNG THUYỀN        </h2>
-        <p>Ngoài đến ghé thăm và khám phá loài khỉ thì trong đảo Khỉ Cần Giờ khách du lịch còn có thể đi tham quan bằng thuyền trên các con lạch hoặc thuê thuyền bơi vào đầm Dơi. Đây hứa hẹn sẽ là những trải nghiệm thú vị, đáng nhớ khi du khách đến thăm đảo Khỉ.</p>
+      <div
+        class="fb-like"
+        data-href="http://127.0.0.1:5500/dia-danh/vam-sat.html"
+        data-width=""
+        data-layout=""
+        data-action=""
+        data-size=""
+        data-share="true"
+      ></div>
+      <h1>DU LỊCH ĐẢO KHỈ CẦN GIỜ – THAM QUAN HOANG DÃ NGAY SÀI GÒN</h1>
+      <p>
+        <b
+          >Tìm hiểu những nét đặc trưng nổi bật của Đảo khỉ Cần Giờ cũng như
+          tham khảo giá vé tham quan ở Đảo Khỉ và giới thiệu những địa điểm du
+          lịch đảo khỉ Cần Giờ.
+        </b>
+      </p>
+      <p>
+        Hiện nay, <b> đảo khỉ Cần Giờ</b> là một trong những địa điểm tham quan,
+        du lịch nổi tiếng được nhiều người ghé đến. Nơi này thuộc khu dự trữ
+        sinh quyển được đánh giá là tốt nhất tại Việt Nam với những cánh rừng
+        được sông nước bao quanh, mang đến không gian khám phá, trải nghiệm mới
+        mẻ. Vậy đảo khỉ Cần Giờ có gì chơi? và khí hậu ở đảo Khỉ như thế nào?
+        Mời bạn cùng KDL Bò Cạp Vàng theo dõi trong bài viết sau đây.
+      </p>
+      <img src="/image/dia-danh/du-lich-dao-khi-can-gio-1.jpg" />
+      <h3>I. ĐẢO KHỈ CẦN GIỜ Ở ĐÂU?</h3>
+      <p>
+        Hiện nay, đảo Khỉ Cần Giờ là một trong những địa điểm du lịch nổi tiếng
+        của huyện Cần Giờ (tp. Hồ Chí Minh). Cách trung tâm thành phố khoảng
+        45km và đồng thời đây chính là nơi cư trú của hơn 2000 cá thể khỉ khác
+        nhau. Để đến được đây bạn sẽ phải đi xe máy và mất chừng 1h30p ( bao gồm
+        cả thời gian đi phà ).
+      </p>
+      <p>
+        Địa điểm này khá gần thành phố, do đó bạn có thể sử dụng nhiều loại
+        phương tiện như: xe khách, taxi, tàu hỏa, xe bus,. Trong đó, xe máy là
+        phương tiện được nhiều người lựa chọn nhất bởi chúng sẽ giúp bạn tiết
+        kiệm sức lực, thời gian và chi phí tối đa. Đặc biệt, dù là xe của bạn
+        hay xe máy thuê ở Sài Gòn thì chi phí vẫn rẻ hơn nhiều so với những
+        phương tiện trên.
+      </p>
+      <p>
+        <b>+ Lộ trình đến Đảo Khỉ Cần Giờ:</b> Từ trung tâm Sài Gòn, bạn cần đi
+        qua cầu Tân Thuận (quận 7), tiếp theo đó rẽ sang đường Nguyễn Văn Linh
+        đến đường Huỳnh Tấn Phát tiếp tục chạy thẳng tới phà Bình Khánh. Gần Phà
+        có vài quán ăn nhỏ, bạn hãy dừng chân ăn và nạp năng lượng cho 1 chuyến
+        đi sôi động vì sang bên Đảo sẽ vắng và ít quán ăn hơn.
+      </p>
+      <h3>II. KHÍ HẬU Ở ĐẢO KHỈ CẦN GIỜ NHƯ THẾ NÀO?</h3>
+      <p>
+        Khí hậu ở đảo Khỉ Cần Giờ cũng không khác biệt nhiều so với trong thành
+        phố. Tuy nhiên, vì có sông nước bao quanh và được rừng cây bao phủ nên
+        nơi đây thường tạo cho du khách cảm giác dễ chịu, thoải mái hơn. Tại đảo
+        khỉ cần Giờ, nhiệt độ trung bình thường sẽ dao động trong khoảng từ 25
+        đến 29 độ.
+      </p>
+      <img src="/image/dia-danh/dao-khi-2.jpg" />
+      <h3>III. THAM KHẢO GIÁ VÉ THAM QUAN TẠI ĐẢO KHỈ CẦN GIỜ</h3>
+      <p>
+        Giá vé vào đảo Khỉ Cần Giờ không quá đắt, chỉ khoảng 35.000đ/người, đồng
+        thời du khách tham quan có thể dạo chơi bao lâu tùy thích, không giới
+        hạn về thời gian. Ngoài việc có ngắm nhìn, chơi đùa cùng những chú khỉ
+        tinh nghịch thì đây cũng là nơi để mọi người thư giãn, hít thở không khí
+        tro trong lành giữa rừng cây hoang dã không khói bụi và ô nhiễm.
+      </p>
+      <h3>IV. ĐẢO KHỈ CẦN GIỜ CÓ GÌ CHƠI?</h3>
+      <p>
+        Với lợi thế nằm trong khu dự trữ sinh quyển ngập mặn lớn của nước ta,
+        đảo Khỉ Cần Giờ hiện nay đang là điểm đến yêu thích của nhiều du khách,
+        đặc biệt là những bạn trẻ thích ngao du, khám phá.
+      </p>
+      <p>
+        Không chỉ có những đoàn khách tour tham quan, nghỉ dưỡng mà các phượt
+        thủ cũng rất thích nơi này bởi không khí trong lành, mát mẻ, đặc biệt
+        những chú khỉ nơi đây được sống trong môi trường hoàn toàn tự nhiên,
+        hoang dã không bị quản thúc và giới hạn như những sở thú trong thành
+        phố.
+      </p>
+      <h2>1. QUAN SÁT VÀ TÌM HIỂU TẬP TÍNH LOÀI KHỈ</h2>
+      <img src="/image/dia-danh/dao-khi-3.jfif" />
+      <p>
+        Loài khỉ thường có tập tính sống theo bầy đàn, tình mẫu tử sâu đậm và có
+        tinh thần đoàn kết cộng đồng. Đến thăm đảo Khỉ Cần Giờ, bạn sẽ dễ dàng
+        bắt gặp một số hình ảnh chúng chăm sóc lẫn nhau, chia sẻ thức ăn,….
+        Thường thì những chú khỉ con chưa có kĩ năng sống thì sẽ được khỉ mẹ
+        cõng trên lưng, còn khỉ bố thì sẽ kiếm thức ăn mang về cho gia đình.
+      </p>
+      <h2>2. THAM QUAN BẰNG THUYỀN</h2>
+      <p>
+        Ngoài đến ghé thăm và khám phá loài khỉ thì trong đảo Khỉ Cần Giờ khách
+        du lịch còn có thể đi tham quan bằng thuyền trên các con lạch hoặc thuê
+        thuyền bơi vào đầm Dơi. Đây hứa hẹn sẽ là những trải nghiệm thú vị, đáng
+        nhớ khi du khách đến thăm đảo Khỉ.
+      </p>
     </article>
     <aside>
-        <table>
-            <tr>
-                <td><img src="/TieuLuan/image/dia-danh/dao-khi-1.jpg"></td>
-            </tr>
-            <tr>
-                <td height="100"></td>
-            </tr>
-            <tr>
-                <td><img src="/TieuLuan/image/dia-danh/dao-khi-2.jpg"></td>
-            </tr>
-            <tr>
-                <td height="100"></td>
-            </tr>
-            <tr>
-                <td><img src="/TieuLuan/image/dia-danh/dao-khi-3.jfif"></td>
-            </tr>
-        </table>
+      <table>
+        <tr>
+          <td><img src="/image/dia-danh/dao-khi-1.jpg" /></td>
+        </tr>
+        <tr>
+          <td height="100"></td>
+        </tr>
+        <tr>
+          <td><img src="/image/dia-danh/dao-khi-2.jpg" /></td>
+        </tr>
+        <tr>
+          <td height="100"></td>
+        </tr>
+        <tr>
+          <td><img src="/image/dia-danh/dao-khi-3.jfif" /></td>
+        </tr>
+      </table>
     </aside>
     <fotter>
-        <h3>2001216066</h3>
-        <h3>Phạm Thị Thu Phương</h3>
-        <h3>12DHTH15</h3>
-        <h3>Tiết 7-11 thứ 4</h3>
+      <h3>2001216066</h3>
+      <h3>Phạm Thị Thu Phương</h3>
+      <h3>12DHTH15</h3>
+      <h3>Tiết 7-11 thứ 4</h3>
     </fotter>
-</body>
+  </body>
 </html>

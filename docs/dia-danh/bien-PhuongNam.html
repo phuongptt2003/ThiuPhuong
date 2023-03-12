@@ -1,149 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Biển Phương Nam</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
 
-   * {
-          box-sizing: border-box;
-        }
-        
-        body {
-          font-family: Arial;
-        }
-        
-        header {
-          padding: 20px;
-          color: rgb(61, 12, 61);
-          
-        }
-        article {
-            float: left;
-            width: 100%;
-            height: 4600px; 
-            background-image: url("/TieuLuan/image/dia-danh/background-nham.jpg");
-            padding: 140px;
-            }
-        article h1{
-            text-align: center;
-            font-size: 35px;
-            color:rgb(22, 22, 231)
-        }
-        article h2{
-            font-size: 24px;
-        }
-        article h3{
-            font-size: 30px;
-        }
-        article p{
-            font-size: 23px;
-        }
-        article img{
-            width: 55%;
-            height: 20%;
-            display: block;
-                margin-left: auto;
-                margin-right:auto;  
-        }
-        nav {
-            float: left;
-            padding: 20px;
-            width: 100%;
-            background-color: #f1f1f1;
-            height: 600px; 
-            }
+      body {
+        font-family: Arial;
+      }
 
-            footer {
-            background-color: #f1b6b6;
-            padding: 80px;
-            width: 100%;
-            text-align: center;
-            font-size: 30px;
-            color: white;
-            }
+      header {
+        padding: 20px;
+        color: rgb(61, 12, 61);
+      }
+      article {
+        float: left;
+        width: 100%;
+        height: 4600px;
+        background-image: url("/image/dia-danh/background-nham.jpg");
+        padding: 140px;
+      }
+      article h1 {
+        text-align: center;
+        font-size: 35px;
+        color: rgb(22, 22, 231);
+      }
+      article h2 {
+        font-size: 24px;
+      }
+      article h3 {
+        font-size: 30px;
+      }
+      article p {
+        font-size: 23px;
+      }
+      article img {
+        width: 55%;
+        height: 20%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      nav {
+        float: left;
+        padding: 20px;
+        width: 100%;
+        background-color: #f1f1f1;
+        height: 600px;
+      }
 
-            table{
-            /* background-image: url("/TieuLuan/image/dia-danh/anh-menu.png"); */
-            background-color: lightblue;
-            background-size: cover;
-        }
-        /* class tìm kím */
-        .search{
-            width: 100%;
-            position: relative;
-            display: flex;
-        }
-        .searchTerm {
-            width: 100%;
-            border: 3px solid #00B4CC;
-            border-right: none;
-            padding: 5px;
-            height: 46px;
-            border-radius: 5px 0 0 5px;
-            outline: none;
-            color: #9DBFAF;
-            }
+      footer {
+        background-color: #f1b6b6;
+        padding: 80px;
+        width: 100%;
+        text-align: center;
+        font-size: 30px;
+        color: white;
+      }
 
-            .searchTerm:focus{
-            color: #00B4CC;
-            }
+      table {
+        /* background-image: url("/image/dia-danh/anh-menu.png"); */
+        background-color: lightblue;
+        background-size: cover;
+      }
+      /* class tìm kím */
+      .search {
+        width: 100%;
+        position: relative;
+        display: flex;
+      }
+      .searchTerm {
+        width: 100%;
+        border: 3px solid #00b4cc;
+        border-right: none;
+        padding: 5px;
+        height: 46px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #9dbfaf;
+      }
 
-            .searchButton {
-            width: 100px;
-            height: 46px;
-            border: 1px solid #00B4CC;
-            background: #00B4CC;
-            text-align: center;
-            color: #fff;
-            border-radius: 0 5px 5px 0;
-            cursor: pointer;
-            font-size: 20px;
-            }
-        .wrap{
-            width: 20%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            }
+      .searchTerm:focus {
+        color: #00b4cc;
+      }
 
-         /* menu ngang */
-        .menungang li{
-            float: left;
-        }
-        .menungang li {
-            display: inline-block;
-            color:rgb(31, 12, 99);
-            text-align: center;
-            padding: 14px 16px;
-            font-size: 25px;
-            font-family: Arial, Helvetica, sans-serif;
-            text-decoration: none;/*  làm mất dấu gạch chân */
-        }
-        .menungang li:hover{
-            background-color: rgb(231, 46, 46);
-        }
-        /* menu dọc */
-        .menu ol{
-            font-size: 30px;
-            text-decoration: none;/*  làm mất dấu gạch chân */
-        }
-        .menu li {
-            display: inline-block;
-            color:rgb(31, 12, 99);
-            text-align: center;
-            padding: 10px;
-            font-size: 30px;
-            font-family: Arial, Helvetica, sans-serif; 
-        }
-        .menu li:hover{
-            background-color: rgb(240, 85, 232);
-        }
-        /* banner */
-        /* .banner {
+      .searchButton {
+        width: 100px;
+        height: 46px;
+        border: 1px solid #00b4cc;
+        background: #00b4cc;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+      }
+      .wrap {
+        width: 20%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      /* menu ngang */
+      .menungang li {
+        float: left;
+      }
+      .menungang li {
+        display: inline-block;
+        color: rgb(31, 12, 99);
+        text-align: center;
+        padding: 14px 16px;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none; /*  làm mất dấu gạch chân */
+      }
+      .menungang li:hover {
+        background-color: rgb(231, 46, 46);
+      }
+      /* menu dọc */
+      .menu ol {
+        font-size: 30px;
+        text-decoration: none; /*  làm mất dấu gạch chân */
+      }
+      .menu li {
+        display: inline-block;
+        color: rgb(31, 12, 99);
+        text-align: center;
+        padding: 10px;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .menu li:hover {
+        background-color: rgb(240, 85, 232);
+      }
+      /* banner */
+      /* .banner {
             display: flex;
             height: 20rem;
             gap: 1rem;
@@ -160,167 +158,255 @@
             flex: 5;
         } */
 
-        .banner{
-            width: 100%;
-            background-image: url('/TieuLuan/image/dia-danh/anh-menu.png');
-            height: 463px;
-            margin-top:40px;
-            display: flex;
-            padding:0px 133px;
-            position:relative;
-        }
-        
-        
-        .banner {
-            text-align: center;
-        }
+      .banner {
+        width: 100%;
+        background-image: url("/image/dia-danh/anh-menu.png");
+        height: 463px;
+        margin-top: 40px;
+        display: flex;
+        padding: 0px 133px;
+        position: relative;
+      }
 
-        .banner  .box-left h2 {
-            font-size:39px;
-            color:#b86b73;
-            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
+      .banner {
+        text-align: center;
+      }
 
-        .banner  .box-left h2:hover {
-            font-size:45px;
-            color:#a415ae;
-        }
+      .banner .box-left h2 {
+        font-size: 39px;
+        color: #b86b73;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
 
-        .banner .box-left p {
-            font-size: 22px;
-            color:#ea5e08;
-        }   
-        .banner .box-left p:hover{
-            color:#62def1c0;
-        }
+      .banner .box-left h2:hover {
+        font-size: 45px;
+        color: #a415ae;
+      }
 
-        .banner .box-left button {
-            width: 221px;
-            height: 60px;
-            margin-top:41px;
-            background:#070707;
-            border:none;
-            outline:none;
-            color:#fff;
-            font-weight: bold;
-            border-radius: 20px;
-            transition:0.4s;
-            font-size: 20px;
-        }
+      .banner .box-left p {
+        font-size: 22px;
+        color: #ea5e08;
+      }
+      .banner .box-left p:hover {
+        color: #62def1c0;
+      }
 
-        .banner .box-left button:hover {
-            background:orange;
-        }
+      .banner .box-left button {
+        width: 221px;
+        height: 60px;
+        margin-top: 41px;
+        background: #070707;
+        border: none;
+        outline: none;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 20px;
+        transition: 0.4s;
+        font-size: 20px;
+      }
 
-    
+      .banner .box-left button:hover {
+        background: orange;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <table border="0" bgcolor="black" width="100%" height="70%">
-            <tr height="70%">
-                <!-- <td colspan="3" align="center"><h1>Menu<h1></td> -->
-            </tr>
-            <tr>
-                <td colspan="3" background-color="black">
-                    <div class="menungang">
-                        <ol>
-                            <h3>
-                                <a href="/TieuLuan/index.html" target="_blank" title="Chuyển tới trang ..."><li>Trang chủ</li></a>
-                                <a href="/TieuLuan/about.html"><li>Thông tin cá nhân</li></a>
-                                <a href="/TieuLuan/am-thuc/index.html"><li>Con người</li></a>
-                                <a href="/TieuLuan/dia-danh/index.html"><li>Phong cảnh</li></a>
-                                <a href="/TieuLuan/contact.html"><li>Contact</li></a>
-                            </h3>
-                        </ol>
-                    </div>
-                </td>
-                <td>
-                    <p>Pham Thi Thu Phuong | 09/03/2023 | Cần Giờ</p>
-                </td>
-            </tr>
-        </table>
+      <table border="0" bgcolor="black" width="100%" height="70%">
+        <tr height="70%">
+          <!-- <td colspan="3" align="center"><h1>Menu<h1></td> -->
+        </tr>
+        <tr>
+          <td colspan="3" background-color="black">
+            <div class="menungang">
+              <ol>
+                <h3>
+                  <a
+                    href="/index.html"
+                    target="_blank"
+                    title="Chuyển tới trang ..."
+                    ><li>Trang chủ</li></a
+                  >
+                  <a href="/about.html"><li>Thông tin cá nhân</li></a>
+                  <a href="/am-thuc/index.html"><li>Con người</li></a>
+                  <a href="/dia-danh/index.html"><li>Phong cảnh</li></a>
+                  <a href="/contact.html"><li>Contact</li></a>
+                </h3>
+              </ol>
+            </div>
+          </td>
+          <td>
+            <p>Pham Thi Thu Phuong | 09/03/2023 | Cần Giờ</p>
+          </td>
+        </tr>
+      </table>
     </header>
 
     <nav>
+      <div class="banner">
         <div class="banner">
-            <div class="banner">
-                <div class="box-left">
-                    <h2>
-                        <span>Sài Gòn du lịch đâu xa - Cần Giờ đi</span>
-
-                    </h2>
-                    <p>Cách trung tâm thành phố Hồ Chí Minh khoảng 50km, làng biển Cần Giờ là điểm du lịch sinh thái lý tưởng cho những du khách muốn tìm một nơi tạm lánh sự huyên náo của chốn phồn hoa đô thị. Nhờ vị trí khá gần trung tâm thành phố mà các bạn trẻ thường chọn Cần Giờ làm địa điểm vi vu cuối tuần đặc biệt là trong những ngày Lễ được nghỉ ngắn ngày. </p>
-                    <button>Vé tham khảo</button>
-                </div>
-                <div class="box-right">
-               
-                    <!-- <img src="/TieuLuan/image/dia-danh/bia.jpg" alt="">
-                    <img src="/TieuLuan/image/dia-danh/anh-menu.png" alt=""> -->
-                </div>
-                <!-- <div class="to-bottom">
+          <div class="box-left">
+            <h2>
+              <span>Sài Gòn du lịch đâu xa - Cần Giờ đi</span>
+            </h2>
+            <p>
+              Cách trung tâm thành phố Hồ Chí Minh khoảng 50km, làng biển Cần
+              Giờ là điểm du lịch sinh thái lý tưởng cho những du khách muốn tìm
+              một nơi tạm lánh sự huyên náo của chốn phồn hoa đô thị. Nhờ vị trí
+              khá gần trung tâm thành phố mà các bạn trẻ thường chọn Cần Giờ làm
+              địa điểm vi vu cuối tuần đặc biệt là trong những ngày Lễ được nghỉ
+              ngắn ngày.
+            </p>
+            <button>Vé tham khảo</button>
+          </div>
+          <div class="box-right">
+            <!-- <img src="/image/dia-danh/bia.jpg" alt="">
+                    <img src="/image/dia-danh/anh-menu.png" alt=""> -->
+          </div>
+          <!-- <div class="to-bottom">
                     <a href="">
                         <img src="assets/to_bottom.png" alt="">
                     </a>
                 </div> -->
-            </div>
-            <!-- <div style="background-image: url('/TieuLuan/image/dia-danh/rung-duoc.jpg');"></div>
-            <div style="background-image: url('/TieuLuan/image/dia-danh/pha-can-gio-vung-tau.jpg');"></div>
-            <div style="background-image: url('/TieuLuan/image/dia-danh/bia.jpg');"></div>
-            <div style="background-image: url('/TieuLuan/image/am-thuc/am-thuc2.jpg');"></div>    
-            <div style="background-image: url('/TieuLuan/image/dia-danh/240403629_2891975391051751_7714261909506638127_n.jpg');"></div>
-            <div style="background-image: url('/TieuLuan/image/dia-danh/anh-menu.png');"></div>
-            <botton>Thử ngay</botton> -->
         </div>
+        <!-- <div style="background-image: url('/image/dia-danh/rung-duoc.jpg');"></div>
+            <div style="background-image: url('/image/dia-danh/pha-can-gio-vung-tau.jpg');"></div>
+            <div style="background-image: url('/image/dia-danh/bia.jpg');"></div>
+            <div style="background-image: url('/image/am-thuc/am-thuc2.jpg');"></div>    
+            <div style="background-image: url('/image/dia-danh/240403629_2891975391051751_7714261909506638127_n.jpg');"></div>
+            <div style="background-image: url('/image/dia-danh/anh-menu.png');"></div>
+            <botton>Thử ngay</botton> -->
+      </div>
     </nav>
 
     <article>
-        <!-- <div class="menu">
+      <!-- <div class="menu">
             <ol>
                 <li><a href=”index.html” title="index.html">Nội dung 1</a></li>
-                <li><a href=”../TieuLuan/ab.html” title="about.html">Nội dung 2</a></li>
-                <li><a href=”/TieuLuan/am-thuc/index.html” title="am-thuc/index.html">Nội dung 3</a></li>
-                <li><a href="/TieuLuan/dia-danh/index.html" title="dia-danh/indext.html">Nội dung 4</a></li>
+                <li><a href=”../ab.html” title="about.html">Nội dung 2</a></li>
+                <li><a href=”/am-thuc/index.html” title="am-thuc/index.html">Nội dung 3</a></li>
+                <li><a href="/dia-danh/index.html" title="dia-danh/indext.html">Nội dung 4</a></li>
             </ol>
         </div> -->
-        <h1>“Quẩy tẹt ga” ở khu du lịch sinh thái biển Phương Nam cực hot</h1><br>
-        <p>Cứ nghĩ Sài Gòn không có khu lịch biển sang trọng? Đến <b>khu du lịch sinh thái biển Phương Nam tại Cần Giờ</b>, chỉ cách trung tâm 60km, chỉ tốn 1 giờ 30 phút - 2 giờ đồng hồ di chuyển bằng xe máy, bạn đã tận hưởng hơi thở của biển cả.</p>
-        <p>Chính vì dễ dàng di chuyển, có khoảng cách gần hơn so với những địa điểm khác và lại có thể sánh ngang với các bãi biển ở Nha Trang và Vũng Tàu, Hòn Ngọc Phương Nam đã vươn lên nhanh chóng trở thành bến đỗ mỗi dịp cuối tuần. Không chỉ có biển, nơi đây còn chứa vô vàn những cảnh vật tiềm năng làm nên những tấm hình đắt giá.</p>
-        <h3>1. Cách di chuyển tới khu du lịch</h3>
-        <p>Khu du lịch sinh thái biển Phương Nam (hay còn gọi là Phuong Nam Pearl Resort) tọa lạc trên số 1227/65 đường Duyên Hải, xã Long Hòa, huyện Cần Giờ. Để đi đến đây, xuất phát từ thành phố Hồ Chí Minh, bạn có thể đi ô tô hoặc phượt xe máy cùng nhóm bạn theo 2 cách sau:</p>
-        <ul>
-            <li><p>Chạy dọc đường Huỳnh Tấn Phát, chạy qua thị trấn Nhà Bè đến bến phà Bình Khánh. Qua khỏi phà, bạn cứ chạy thẳng sẽ thấy biển hiệu của khu du lịch.</p></li>
-            <li><p>Đối với các bạn quen thuộc với Cần Giờ thì theo hướng Rừng Sác khoảng 60km sẽ đến</p></li><br>
-        </ul>
-        <img src="/TieuLuan/image/dia-danh/bien-phuong-nam-1.webp"><br>
-        <h3>2. Thời điểm tuyệt nhất để đi du lịch Cần Giờ</h3>
-        <p>Đặc trưng của miền nhiệt đới cận xích đạo, nằm ở miền Nam đất nước, Cần Giờ có hai mùa nắng mưa rõ rệt, kéo dài từ tháng 11 đến tháng 4 năm sau và tháng 5 đến tháng 10 theo thứ tự. Nhìn chung, bạn có thể đến hầu như mọi tháng trong năm, trừ những ngày mưa tầm tã, ảnh hưởng đến việc di chuyển.</p>
-        <p>Đặc biệt, những ngày bão đổ bộ trong tháng 8 hằng năm, biển động khá nhiều, nếu chỉ đến để ăn hải sản, bạn vẫn cứ đi được vô tư lự. Thế nhưng bạn cần kiểm tra kỹ càng thời tiết trong thời gian này nhé.</p><br>
-        <img src="/TieuLuan/image/dia-danh/khu-du-lich-sinh-thai-bien-phuong-nam-2.webp"><br>
-        <h3>3. Khám phá điểm nổi bật của khu du lịch sinh thái biển Phương Nam</h3>
-        <h2>Hệ thống phòng</h2>
-        <p>Tổng cộng có 58 phòng, trong đó có 27 phòng cao cấp và 2 phòng dành cho VIP với view khác nhau, tùy vào sở thích của người ghé thăm. Nếu đi cùng với gia đình hoặc nhóm đông người, bạn có thể lựa chọn phòng hạng Double. Đây là nơi ở được lấy cảm hứng từ kiến trúc truyền thống của người Việt Nam, hướng về thiên nhiên và cực kỳ thân thuộc.</p>
-        <p>Nếu du khách không có ý định ở lại mà chỉ muốn thưởng ngoạn khung cảnh và sử dụng hồ tắm thì có thể mua vé vào cổng với giá từ 50,000 VND - 75,000 VND. Vé đã bao gồm cả hồ nước mặn và ngọt để bạn thoải mái chuyển dịch mà không sợ tốn thêm chi phí.</p>
-        <img src="/TieuLuan/image/dia-danh/khu-du-lich-sinh-thai-bien-phuong-nam-3.webp">
-        <h2>Khu resort 3 sao sang trọng, gần gũi với thiên nhiên</h2>
-        <p>Vượt qua cái nắng ở Cần Giờ, đặt chân đến khu du lịch sinh thái biển Phương Nam, bạn sẽ nghe thấy tiếng sóng vỗ rì rào trong bầu không khí thanh bình và mát lạnh đến từ biển cả. Một mảng xanh mướt hiện ra trước mắt, là sự dung hợp của biển và rừng cùng bầu trời, tạo nên bức tranh thiên nhiên hoang sơ và xinh đẹp.</p>
-        <p>Điểm ấn tượng nhất chính là khu rừng ngập mặn xung quanh rộng lớn, có sự góp mặt của hơn ngàn chú khỉ được thả tự do để nô đùa cùng du khách. Nhận phòng xong, bạn có thể nhào ra hồ bơi để bung xõa cái nóng và quẩy tung trên dòng nước rộng lớn.</p>
-        <h2>Buffet ”xịn sò”, món nào cũng gây thương nhớ</h2>
-        <p>Bên cạnh khung cảnh thích mê, khu du lịch sinh thái biển Phương Nam còn mang đến một bữa tiệc phong phú món ăn với đủ loại hải sản thơm ngon. Các loại hải sản phong phú để bạn dễ dàng chọn lựa như: tôm hùm, sò huyết, ốc, mực, cá,... được phối hợp khéo léo với các nguyên liệu, gia vị và nấu nướng chuyên nghiệp. Đây cũng chính là điểm neo để mọi người đến với Cần Giờ. Không chỉ tươi ngon từ nguyên liệu, cách chế biến cũng mang đến sức hấp dẫn không thể chối từ.</p>
-        <p>Ngoài ra, không gian thưởng thức là một điểm cộng rất lớn.Thông thường, ở những nơi khác, buffet diễn ra trong không gian kín khu nhà hàng. Còn tại nơi này, bạn sẽ được thưởng thức tiệc buffet trong khung cảnh ngoài trời, có bầu trời cao rộng, cát trắng và biển xanh rì rào gió thổi.</p>
-        <p>Dưới ánh đèn vàng, ánh lửa bập bùng, chúng ta hãy sống chậm lại, gạt qua những điều chưa an nhiên mà tận hưởng khoảnh khắc ấm cúng bất tận này. Kể lại những câu chuyện xưa nhưng chưa bao giờ cũ, trao cho nhau điều ân cần và thưởng thức những món ăn, đồ uống làm mồi. Còn gì tuyệt hơn nữa cho một buổi cuối tuần giải ưu tư?</p>
-
-
-
-    
+      <h1>“Quẩy tẹt ga” ở khu du lịch sinh thái biển Phương Nam cực hot</h1>
+      <br />
+      <p>
+        Cứ nghĩ Sài Gòn không có khu lịch biển sang trọng? Đến
+        <b>khu du lịch sinh thái biển Phương Nam tại Cần Giờ</b>, chỉ cách trung
+        tâm 60km, chỉ tốn 1 giờ 30 phút - 2 giờ đồng hồ di chuyển bằng xe máy,
+        bạn đã tận hưởng hơi thở của biển cả.
+      </p>
+      <p>
+        Chính vì dễ dàng di chuyển, có khoảng cách gần hơn so với những địa điểm
+        khác và lại có thể sánh ngang với các bãi biển ở Nha Trang và Vũng Tàu,
+        Hòn Ngọc Phương Nam đã vươn lên nhanh chóng trở thành bến đỗ mỗi dịp
+        cuối tuần. Không chỉ có biển, nơi đây còn chứa vô vàn những cảnh vật
+        tiềm năng làm nên những tấm hình đắt giá.
+      </p>
+      <h3>1. Cách di chuyển tới khu du lịch</h3>
+      <p>
+        Khu du lịch sinh thái biển Phương Nam (hay còn gọi là Phuong Nam Pearl
+        Resort) tọa lạc trên số 1227/65 đường Duyên Hải, xã Long Hòa, huyện Cần
+        Giờ. Để đi đến đây, xuất phát từ thành phố Hồ Chí Minh, bạn có thể đi ô
+        tô hoặc phượt xe máy cùng nhóm bạn theo 2 cách sau:
+      </p>
+      <ul>
+        <li>
+          <p>
+            Chạy dọc đường Huỳnh Tấn Phát, chạy qua thị trấn Nhà Bè đến bến phà
+            Bình Khánh. Qua khỏi phà, bạn cứ chạy thẳng sẽ thấy biển hiệu của
+            khu du lịch.
+          </p>
+        </li>
+        <li>
+          <p>
+            Đối với các bạn quen thuộc với Cần Giờ thì theo hướng Rừng Sác
+            khoảng 60km sẽ đến
+          </p>
+        </li>
+        <br />
+      </ul>
+      <img src="/image/dia-danh/bien-phuong-nam-1.webp" /><br />
+      <h3>2. Thời điểm tuyệt nhất để đi du lịch Cần Giờ</h3>
+      <p>
+        Đặc trưng của miền nhiệt đới cận xích đạo, nằm ở miền Nam đất nước, Cần
+        Giờ có hai mùa nắng mưa rõ rệt, kéo dài từ tháng 11 đến tháng 4 năm sau
+        và tháng 5 đến tháng 10 theo thứ tự. Nhìn chung, bạn có thể đến hầu như
+        mọi tháng trong năm, trừ những ngày mưa tầm tã, ảnh hưởng đến việc di
+        chuyển.
+      </p>
+      <p>
+        Đặc biệt, những ngày bão đổ bộ trong tháng 8 hằng năm, biển động khá
+        nhiều, nếu chỉ đến để ăn hải sản, bạn vẫn cứ đi được vô tư lự. Thế nhưng
+        bạn cần kiểm tra kỹ càng thời tiết trong thời gian này nhé.
+      </p>
+      <br />
+      <img
+        src="/image/dia-danh/khu-du-lich-sinh-thai-bien-phuong-nam-2.webp"
+      /><br />
+      <h3>
+        3. Khám phá điểm nổi bật của khu du lịch sinh thái biển Phương Nam
+      </h3>
+      <h2>Hệ thống phòng</h2>
+      <p>
+        Tổng cộng có 58 phòng, trong đó có 27 phòng cao cấp và 2 phòng dành cho
+        VIP với view khác nhau, tùy vào sở thích của người ghé thăm. Nếu đi cùng
+        với gia đình hoặc nhóm đông người, bạn có thể lựa chọn phòng hạng
+        Double. Đây là nơi ở được lấy cảm hứng từ kiến trúc truyền thống của
+        người Việt Nam, hướng về thiên nhiên và cực kỳ thân thuộc.
+      </p>
+      <p>
+        Nếu du khách không có ý định ở lại mà chỉ muốn thưởng ngoạn khung cảnh
+        và sử dụng hồ tắm thì có thể mua vé vào cổng với giá từ 50,000 VND -
+        75,000 VND. Vé đã bao gồm cả hồ nước mặn và ngọt để bạn thoải mái chuyển
+        dịch mà không sợ tốn thêm chi phí.
+      </p>
+      <img src="/image/dia-danh/khu-du-lich-sinh-thai-bien-phuong-nam-3.webp" />
+      <h2>Khu resort 3 sao sang trọng, gần gũi với thiên nhiên</h2>
+      <p>
+        Vượt qua cái nắng ở Cần Giờ, đặt chân đến khu du lịch sinh thái biển
+        Phương Nam, bạn sẽ nghe thấy tiếng sóng vỗ rì rào trong bầu không khí
+        thanh bình và mát lạnh đến từ biển cả. Một mảng xanh mướt hiện ra trước
+        mắt, là sự dung hợp của biển và rừng cùng bầu trời, tạo nên bức tranh
+        thiên nhiên hoang sơ và xinh đẹp.
+      </p>
+      <p>
+        Điểm ấn tượng nhất chính là khu rừng ngập mặn xung quanh rộng lớn, có sự
+        góp mặt của hơn ngàn chú khỉ được thả tự do để nô đùa cùng du khách.
+        Nhận phòng xong, bạn có thể nhào ra hồ bơi để bung xõa cái nóng và quẩy
+        tung trên dòng nước rộng lớn.
+      </p>
+      <h2>Buffet ”xịn sò”, món nào cũng gây thương nhớ</h2>
+      <p>
+        Bên cạnh khung cảnh thích mê, khu du lịch sinh thái biển Phương Nam còn
+        mang đến một bữa tiệc phong phú món ăn với đủ loại hải sản thơm ngon.
+        Các loại hải sản phong phú để bạn dễ dàng chọn lựa như: tôm hùm, sò
+        huyết, ốc, mực, cá,... được phối hợp khéo léo với các nguyên liệu, gia
+        vị và nấu nướng chuyên nghiệp. Đây cũng chính là điểm neo để mọi người
+        đến với Cần Giờ. Không chỉ tươi ngon từ nguyên liệu, cách chế biến cũng
+        mang đến sức hấp dẫn không thể chối từ.
+      </p>
+      <p>
+        Ngoài ra, không gian thưởng thức là một điểm cộng rất lớn.Thông thường,
+        ở những nơi khác, buffet diễn ra trong không gian kín khu nhà hàng. Còn
+        tại nơi này, bạn sẽ được thưởng thức tiệc buffet trong khung cảnh ngoài
+        trời, có bầu trời cao rộng, cát trắng và biển xanh rì rào gió thổi.
+      </p>
+      <p>
+        Dưới ánh đèn vàng, ánh lửa bập bùng, chúng ta hãy sống chậm lại, gạt qua
+        những điều chưa an nhiên mà tận hưởng khoảnh khắc ấm cúng bất tận này.
+        Kể lại những câu chuyện xưa nhưng chưa bao giờ cũ, trao cho nhau điều ân
+        cần và thưởng thức những món ăn, đồ uống làm mồi. Còn gì tuyệt hơn nữa
+        cho một buổi cuối tuần giải ưu tư?
+      </p>
     </article>
-   
+
     <footer>
-        <h3>2001216066</h3>
-        <h3>Phạm Thị Thu Phương</h3>
-        <h3>12DHTH15</h3>
-        <h3>Tiết 7-11 thứ 4</h3>
+      <h3>2001216066</h3>
+      <h3>Phạm Thị Thu Phương</h3>
+      <h3>12DHTH15</h3>
+      <h3>Tiết 7-11 thứ 4</h3>
     </footer>
-   
-</body>
+  </body>
 </html>
